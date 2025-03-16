@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  margin-bottom: 8px;
+}
+
+.navigation {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #210697;
+  text-decoration: none;
+  padding: 8px 16px;
+  /* margin-bottom: 8px; */
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(23, 14, 148, 0.1);
+  background-color: #b2c1f8;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation:hover,
+.navigation:focus {
+  background-color: #6c8cff;
+}
+
+.timer-title {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 1.5px #7c7a7a;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  height: auto;
+  margin: 0 auto;
+
+  border: 1px solid #808080;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-box {
+  width: 355px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+input {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: auto;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  padding: 8px 16px;
+  transition: border 0.3s, color 0.3s;
+}
+
+input:hover,
+input:focus-visible {
+  border: 1px solid #000;
+  cursor: pointer;
+  outline: none;
+}
+
+input:active {
+  border-color: #4e75ff;
+  color: #000;
+}
+
+button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: auto;
+  background: #4e75ff;
+  border: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  transition: border 0.3s, color 0.3s;
+}
+
+button:hover,
+button:focus {
+  background: #6c8cff;
+  cursor: pointer;
+}
+
+button:disabled {
+    background: #cfcfcf;
+    color: #989898;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  gap: 0px;
+  width: 346px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
+}
